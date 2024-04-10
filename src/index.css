@@ -96,3 +96,7 @@
 .btn:hover::before {
   transform: translateX(0);
 }
+
+#contact{
+  position: relative !important;
+}
