@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -12,7 +12,7 @@ const WorkSlider = () => {
       
   
   const numbWorks = ["01", "02", "03", "04", "05"];
-  useEffect(() => {
+  useLayoutEffect(() => {
     ammountToScroll();
     const pin = gsap.fromTo(
       sectionRef.current,
