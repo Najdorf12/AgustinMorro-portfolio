@@ -21,12 +21,13 @@ const Contact = () => {
         start: "top bottom",
         end: "top top",
         scrub: true,
+        markers:true,
       },
     });
   }, []);
 
   return (
-    <section>
+   <>
       <section
         id="contact"
         className="realative z-50 bg-gray-100 w-full h-screen flex flex-col justify-center items-center lg:items-start lg:pl-20  "
@@ -76,7 +77,8 @@ const Contact = () => {
           </li>
         </ul>
       </section>
-    </section>
+   </>
+
   );
 };
 

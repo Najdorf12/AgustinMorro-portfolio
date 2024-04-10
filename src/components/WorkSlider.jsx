@@ -8,13 +8,9 @@ const WorkSlider = () => {
   const triggerRef = useRef(null);
 
   let dinamicWidth = 0;
-  const ammountToScroll = () => {
-    if (window.innerWidth > 820) {
-      dinamicWidth = "-90vw";
-    } else {
-      dinamicWidth = "-210vw";
-    }
-  };
+  const ammountToScroll = () =>  window.innerWidth > 820 ? dinamicWidth = "-90vw" : dinamicWidth = "-210vw";
+      
+  
   const numbWorks = ["01", "02", "03", "04", "05"];
   useEffect(() => {
     ammountToScroll();
