@@ -38,7 +38,7 @@ const WorkSlider = () => {
   }, []);
 
   return (
-    <section className="overflow-hidden bg-zinc-600">
+    <section className="overflow-hidden bg-zinc-900">
       <div ref={triggerRef}>
         <div
           id="works-wrapper"
