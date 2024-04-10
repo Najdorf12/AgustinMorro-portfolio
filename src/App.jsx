@@ -24,15 +24,14 @@ const App = () => {
         <About />
         <TitleReveal />
         <WorkSlider></WorkSlider>
+        <Contact />
         <article className="relative flex flex-col h-screen w-full">
-          <h2 className="w-fit  text-6xl font-semibold font-title2 text-red-700 sm:text-8xl lg:text-9xl">
+          <h2 className="z-50 w-fit  text-6xl font-semibold font-title2 text-red-700 sm:text-8xl lg:text-9xl">
             Lets Talk
           </h2>
         
           <i className='bx bx-link-external text-zinc-900 self-end lg:text-7xl lg:mt-1 rotate-90 '></i>
         </article> 
-        <Contact />
-       
       </main>
     </ReactLenis>
   );
