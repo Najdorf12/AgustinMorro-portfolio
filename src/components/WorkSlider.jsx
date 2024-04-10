@@ -1,4 +1,4 @@
-import React, { useRef, useEffect} from "react";
+import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -15,7 +15,7 @@ const WorkSlider = () => {
       dinamicWidth = "-210vw";
     }
   };
-
+  const numbWorks = ["01", "02", "03", "04", "05"];
   useEffect(() => {
     ammountToScroll();
     const pin = gsap.fromTo(
@@ -54,47 +54,20 @@ const WorkSlider = () => {
               style={{
                 writingMode: "vertical-lr",
                 transform: "rotate(180deg)",
+               /*  WebkitTextFillColor: "transparent",
+                WebkitTextStroke: "1px white", */
               }}
               className="text-stone-200 font-semibold font-title2 text-6xl lg:text-9xl lg:mr-6"
             >
               WORKS
             </h3>
-
-            <h3 className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md ">
-              <span className="absolute z-10 -left-5 -bottom-5 lg:-left-7 lg:-bottom-7 text-5xl font-semibold text-red-700 lg:text-7xl">
-                01
-              </span>
-            </h3>
-            <h3 className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md">
-              {" "}
-              <span className="absolute z-10 -left-5 -bottom-5 lg:-left-7 lg:-bottom-7 text-5xl font-semibold text-red-700 lg:text-7xl">
-                02
-              </span>
-            </h3>
-            <h3 className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md">
-              {" "}
-              <span className="absolute z-10 -left-5 -bottom-5 lg:-left-7 lg:-bottom-7 text-5xl font-semibold text-red-700 lg:text-7xl">
-                03
-              </span>
-            </h3>
-            <h3 className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md ">
-              {" "}
-              <span className="absolute z-10 -left-5 -bottom-5 lg:-left-7 lg:-bottom-7 text-5xl font-semibold text-red-700 lg:text-7xl">
-                04
-              </span>
-            </h3>
-            <h3 className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md">
-              {" "}
-              <span className="absolute z-10 -left-5 -bottom-5 lg:-left-7 lg:-bottom-7 text-5xl font-semibold text-red-700 lg:text-7xl">
-                05
-              </span>
-            </h3>
-            <h3 className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md">
-              {" "}
-              <span className="absolute z-10 -left-5 -bottom-5 lg:-left-7 lg:-bottom-7 text-5xl font-semibold text-red-700 lg:text-7xl">
-                06
-              </span>
-            </h3>
+            {numbWorks.map((num, i) => (
+              <h3 key={i} className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md ">
+                <span className="absolute z-10 -left-5 -bottom-5 lg:-left-7 lg:-bottom-7 text-5xl font-semibold text-stone-600 lg:text-7xl">
+                  {num}
+                </span>
+              </h3>
+            ))}
           </div>
         </div>
       </div>

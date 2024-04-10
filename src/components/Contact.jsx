@@ -42,9 +42,9 @@ const Contact = () => {
 
       <section
         id="contact-content"
-        className="bg-zinc-900 z-50 w-full h-screen absolute flex flex-col items-center pt-20"
+        className="bg-zinc-900 z-50 w-full h-screen absolute flex flex-col items-center lg:pt-16"
       >
-        <h2 className=" text-xl self-start ml-10 mb-12 text-stone-400 font-semibold font-title">
+        <h2 className=" lg:text-2xl lg:leading-9 self-start ml-10 mb-12 text-stone-400 font-semibold font-title">
           Open to new opportunities and collaborations! <br /> Get in touch
         </h2>
         {contactBtns.map((btn,i) => (

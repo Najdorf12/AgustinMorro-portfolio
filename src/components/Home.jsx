@@ -6,10 +6,10 @@ const Home = () => {
         <h1 className="font-title font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-b from-red-600 to-neutral-800 lg:text-4xl">
           Hi,Im
         </h1>
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-title font-bold text-5xl ml-6 sm:ml-12 lg:text-7xl lg:tracking-wider lg:ml-24 lg:font-extrabold">
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-title font-extrabold text-5xl ml-6 sm:ml-12 lg:text-8xl lg:tracking-wider lg:ml-24 lg:font-black">
           AGUSTIN
         </h1>
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-title font-bold text-5xl lg:text-7xl lg:font-extrabold">
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-title font-black text-5xl lg:text-8xl lg:font-extrabold">
           MORRO
         </h1>
         {/* <p className="text-2xl text-gray-300 font-semibold font-title self-center mt-6"> {'< CODER />'} </p> */}
