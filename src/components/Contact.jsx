@@ -21,7 +21,16 @@ const Contact = () => {
         start: "top bottom",
         end: "top top",
         scrub: true,
-        markers:true,
+      },
+    })
+    .to("#lets-talk", {
+      y: "500px",
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#contact-content",
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
       },
     });
   }, []);
@@ -30,9 +39,9 @@ const Contact = () => {
    <>
       <section
         id="contact"
-        className="realative z-50 bg-gray-100 w-full h-screen flex flex-col justify-center items-center lg:items-start lg:pl-20  "
+        className="realative bg-gray-100 w-full h-screen flex flex-col justify-center items-center lg:items-start lg:pl-20  "
       >
-     <article className="relative flex flex-col">
+     <article  id="lets-talk" className="relative flex flex-col">
           <h2 className="w-fit  text-6xl font-semibold font-title2 text-red-700 sm:text-8xl lg:text-9xl">
             Lets Talk
           </h2>

@@ -1,33 +1,54 @@
+import bgPaint from "/bg-paint.png";
+
 const Home = () => {
   return (
-    <section id="home" className="w-full h-screen bg-zinc-900 px-2 pt-14 sm:pl-12 md:flex md:flex-col md:justify-center md:pt-0 xl:pl-44">
-     
-      <article className="flex flex-col items-start z-10 gap-2 px-2 relative  xl:max-w-fit">
-        <h1 className="font-title font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-b from-red-600 to-neutral-800 lg:text-4xl">
-          Hi,Im
+    <section
+      id="home"
+      className="relative first-letter:w-full h-screen bg-zinc-900  md:flex md:flex-col md:pt-0"
+    >
+      
+      <article className="flex px-2 flex-col h-full py-4 items-start justify-center  gap-2 w-full relative  lg:max-w-fit lg:h-[100%] lg:justify-center lg:pt-1 lg:ml-20 lg:-mt-10 ">
+        <h1 className="z-10 font-test font-bold text-6xl tracking-wide text-stone-700 sm:text-8xlsm:ml-[78px] lg:text-[9rem] ">
+          <span className="text-red-700 lg:mr-2">A</span>GUSTIN
         </h1>
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-title font-extrabold text-5xl ml-6 sm:ml-12 lg:text-8xl lg:tracking-wider lg:ml-24 lg:font-black">
-          AGUSTIN
+        <h1 
+          className="z-10  font-test font-bold text-6xl text-stone-700 tracking-wide sm:text-8xl  lg:text-[9rem] lg:-mt-5  ">
+          <span style={{
+          WebkitTextFillColor: "transparent",
+           WebkitTextStroke: "3px",
+           margin:"0 auto"
+         }} className="text-red-700">M</span>ORRO
         </h1>
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-title font-black text-5xl lg:text-8xl lg:font-extrabold">
-          MORRO
-        </h1>
-        {/* <p className="text-2xl text-gray-300 font-semibold font-title self-center mt-6"> {'< CODER />'} </p> */}
-       <p className="mt-6 font-title font-normal text-sm text-gray-400 leading-relaxed max-w-[400px] lg:font-medium lg:max-w-[430px] lg:text-base">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,
-          accusantium ipsa? Quos fugiat culpa
-          numquam, harum quidem!
-        </p> 
-        <button className="mt-8 bg-gradient-to-tl font-text tracking-wider from-red-700 text-gray-300 px-2 py-1 flex justify-center items-center w-36 font-semibold text-base rounded-md self-center sm:self-start ">
-          Portfolio
-        </button>
+       {/*   <div className="w-20 h-1 self-start bg-stone-700 sm:w-28 rounded-sm  xl:mt-2 xl:w-44 "></div>  */}
+
+        <p className=" z-10 mt-3 font-title2 text-xl text-stone-700 leading-relaxed max-w-[400px] font-medium sm:text-2xl lg:max-w-[430px] lg:text-2xl ">
+          FRONTEND DEVELOPER
+        </p>
+        <div className="z-40 lg:gap-5 flex justify-center items-center mt-6 ">
+          <li className="item">
+            <a href="#">
+              <i className="bx bxl-github"></i>
+            </a>
+          </li>
+          <li className="item">
+            <a href="#">
+              <i className="bx bxl-linkedin"></i>
+            </a>
+          </li>
+          
+          </div>
       </article>
 
-      <div className="absolute bottom-0 left-0 flex justify-center items-center text-4xl m-4 mb-6 text-stone-300 sm:ml-8 lg:flex-col">
-        <i className="bx bxl-github"></i>
+      <div style={{
+       clipPath:"polygon(0 0, 0% 100%, 100% 0)"
+      }} className="opacity-100 absolute top-0 right-0 bottom-0 left-0 bg-gray-200 rounded-md 
+      lg:opacity-100">
+     </div> 
+      {/* <div className="absolute bottom-0 left-0 flex flex-col gap-1 justify-center items-center text-4xl m-4 mb-6 text-stone-300 sm:ml-5 lg:flex-col z-50">
+        <i className="bx bxl-github "></i>
         <i className="bx bxl-linkedin"></i>
-        <div className="w-24 h-1 ml-2 mt-2 bg-stone-600 rounded-sm xl:w-1 xl:h-24 xl:mt-3 xl:ml-0"></div>
-      </div>
+        <div className="w-1 h-24 mt-2 bg-stone-600 rounded-sm xl:w-1 xl:h-16 xl:mt-3 xl:ml-0"></div>
+      </div> */}
     </section>
   );
 };

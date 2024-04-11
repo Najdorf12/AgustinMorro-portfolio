@@ -13,7 +13,7 @@ const App = () => {
   });
   return (
     <ReactLenis root>
-      <div className="h-screen overflow-x-hidden w-screen fixed top-0 right-0 left-0 z-10 lg:block">
+      <div className="h-screen overflow-x-hidden w-screen fixed top-0 right-0 left-0 z-40 lg:block">
         <Canvas shadows camera={{ position: [35, 9, 80], fov: 4 }}>
           <Experience />
         </Canvas>
