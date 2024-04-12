@@ -44,7 +44,7 @@ export default function Model(props) {
 
   useLayoutEffect(() => {
     new ScrollTrigger({});
-    // component About.tsx
+    // ABOUT SECTION
     tl.to(camera.position, {
       x: 45.85,
       y: 0,
@@ -83,7 +83,7 @@ export default function Model(props) {
         },
       })
 
-      /* THIRDSECTION */
+      /* THIRD SECTION */
       .to(camera.position, {
         x: 67.5,
         y: 1.3,
@@ -125,7 +125,37 @@ export default function Model(props) {
           scrub: true,
           immediateRender: false,
         },
-      });
+      })
+      /*WORKS SECTION */
+      .to(camera.position, {
+        x: 75.5,
+        y: 1,
+        z:6,
+        ease: "power1.in",
+        duration: 5,
+        scrollTrigger: {
+          trigger: "#works",
+          start: "100px bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
+      .to(scene.position, {
+        x: 2.3,
+        y: -1.3,
+        z: -.7,
+        ease: "power1.in",
+        duration: 5,
+        scrollTrigger: {
+          trigger: "#works",
+          start: "100px bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
+      
   }, []);
 
   // ---- used for debug ----
