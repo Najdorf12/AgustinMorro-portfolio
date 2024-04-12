@@ -23,7 +23,7 @@ const Home = () => {
         <p className=" z-10 mt-3 font-title2 text-xl text-stone-700 leading-relaxed max-w-[400px] font-medium sm:text-2xl lg:max-w-[430px] lg:text-2xl lg:font-semibold ">
           FULL STACK DEVELOPER
         </p>
-        <div className="z-40 lg:gap-5 flex justify-center items-center mt-6 ">
+        <div className="z-40 flex justify-center items-center mt-6 ">
           <li className="item">
             <a href="#">
               <i className="bx bxl-github"></i>
