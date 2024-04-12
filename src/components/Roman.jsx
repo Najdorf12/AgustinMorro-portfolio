@@ -155,7 +155,49 @@ export default function Model(props) {
           immediateRender: false,
         },
       })
-      
+      /*CONTACT SECTION */
+      .to(camera.position, {
+        x: 85.5,
+        y: .8,
+        z:12,
+        ease: "power1.in",
+        duration: 5,
+        scrollTrigger: {
+          trigger: "#contact",
+          start: "100px bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
+      .to(scene.position, {
+        x: -30,
+        y: -1,
+        z: -1,
+        ease: "power1.in",
+        duration: 5,
+        scrollTrigger: {
+          trigger: "#contact",
+          start: "100px bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
+      .to(scene.rotation, {
+        x: 0.0,
+        y: 1.5,
+        z: 0.0,
+        ease: "power1.in",
+        duration: 5,
+        scrollTrigger: {
+          trigger: "#contact",
+          start: "100px bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      })
   }, []);
 
   // ---- used for debug ----
