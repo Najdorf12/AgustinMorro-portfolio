@@ -172,7 +172,7 @@ export default function Model(props) {
       })
       .to(scene.position, {
         x: -20,
-        y: -1.1,
+        y: -1.3,
         z: -.5,
         ease: "power1.in",
         duration: 5,

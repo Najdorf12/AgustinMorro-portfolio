@@ -20,8 +20,8 @@ const Home = () => {
         </h1>
        {/*   <div className="w-20 h-1 self-start bg-stone-700 sm:w-28 rounded-sm  xl:mt-2 xl:w-44 "></div>  */}
 
-        <p className=" z-10 mt-3 font-title2 text-xl text-stone-700 leading-relaxed max-w-[400px] font-medium sm:text-2xl lg:max-w-[430px] lg:text-2xl ">
-          FRONTEND DEVELOPER
+        <p className=" z-10 mt-3 font-title2 text-xl text-stone-700 leading-relaxed max-w-[400px] font-medium sm:text-2xl lg:max-w-[430px] lg:text-2xl lg:font-semibold ">
+          FULL STACK DEVELOPER
         </p>
         <div className="z-40 lg:gap-5 flex justify-center items-center mt-6 ">
           <li className="item">
@@ -40,7 +40,7 @@ const Home = () => {
 
       <div style={{
        clipPath:"polygon(0 0, 0% 100%, 100% 0)"
-      }} className="opacity-100 absolute top-0 right-0 bottom-0 left-0 bg-gray-200 rounded-md 
+      }} className="opacity-100 absolute top-0 right-0 bottom-0 left-0 bg-gray-200  
       lg:opacity-100">
      </div> 
       {/* <div className="absolute bottom-0 left-0 flex flex-col gap-1 justify-center items-center text-4xl m-4 mb-6 text-stone-300 sm:ml-5 lg:flex-col z-50">
