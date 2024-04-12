@@ -24,7 +24,7 @@ const Contact = () => {
       },
     })
     .to("#lets-talk", {
-      y: "500px",
+      y: "300px",
       ease: "power2.in",
       duration:2,
       scrollTrigger: {
