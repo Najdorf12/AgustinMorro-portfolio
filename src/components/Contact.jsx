@@ -36,6 +36,7 @@ const Contact = () => {
     });
   }, []);
 
+
   return (
    <>
       <section
@@ -59,12 +60,12 @@ const Contact = () => {
           Open to new opportunities and collaborations! <br /> Get in touch
         </h2>
         {contactBtns.map((btn,i) => (
-          <div key={i} className="btn">
+          <div  key={i} className="btn">
             <p 
-          className="relative flex justify-between font-bold font-title2 py-3 text-7xl pl-10 text-stone-700  duration-700 w-full">
+          className="relative z-50 flex justify-between font-bold font-title2 py-3 text-7xl pl-10 text-stone-700  duration-700 w-full">
               { btn.name } 
               
-              <p className="font-semibold pb-2 font-title text-xl hover:text-red-700  absolute right-0 left-0 bottom-0 top-0 flex items-center justify-end opacity-0 hover:opacity-100 hover:-translate-x-20 lg:pr-20 duration-700">
+              <p id="btn-data" className="font-semibold pb-2 font-title text-xl hover:text-red-700  absolute right-0 left-0 bottom-0 top-0 flex items-center justify-end opacity-0 hover:opacity-100 hover:-translate-x-20 lg:pr-20 duration-700">
                { btn.data }
               </p>
             </p>
