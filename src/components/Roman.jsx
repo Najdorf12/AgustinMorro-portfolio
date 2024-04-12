@@ -157,9 +157,9 @@ export default function Model(props) {
       })
       /*CONTACT SECTION */
       .to(camera.position, {
-        x: 85.5,
+        x: 74.5,
         y: .8,
-        z:12,
+        z:20,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -171,9 +171,9 @@ export default function Model(props) {
         },
       })
       .to(scene.position, {
-        x: -30,
-        y: -1,
-        z: -1,
+        x: -20,
+        y: -1.1,
+        z: -.5,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {

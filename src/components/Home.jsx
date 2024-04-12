@@ -16,7 +16,6 @@ const Home = () => {
           <span style={{
           WebkitTextFillColor: "transparent",
            WebkitTextStroke: "3px",
-           margin:"0 auto"
          }} className="text-red-700">M</span>ORRO
         </h1>
        {/*   <div className="w-20 h-1 self-start bg-stone-700 sm:w-28 rounded-sm  xl:mt-2 xl:w-44 "></div>  */}
