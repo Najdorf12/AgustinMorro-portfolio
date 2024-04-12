@@ -8,11 +8,11 @@ const Home = () => {
     >
       
       <article className="flex px-2 flex-col h-full py-4 items-start justify-center  gap-2 w-full relative  lg:max-w-fit lg:h-[100%] lg:justify-center lg:pt-1 lg:ml-20 lg:-mt-10 ">
-        <h1 className="z-10 font-test font-bold text-6xl tracking-wide text-stone-700 sm:text-8xlsm:ml-[78px] lg:text-[9rem] ">
+        <h1 className="z-10 font-test font-bold text-6xl tracking-wide text-stone-700 sm:text-8xl  lg:text-[9rem] ">
           <span className="text-red-700 lg:mr-2">A</span>GUSTIN
         </h1>
         <h1 
-          className="z-10  font-test font-bold text-6xl text-stone-700 tracking-wide sm:text-8xl  lg:text-[9rem] lg:-mt-5  ">
+          className="z-10  font-test font-bold text-6xl text-stone-700 tracking-wide sm:text-8xl lg:text-[9rem] lg:-mt-5  ">
           <span style={{
           WebkitTextFillColor: "transparent",
            WebkitTextStroke: "3px",
