@@ -15,7 +15,7 @@ const Contact = () => {
   useLayoutEffect(() => {
     tl.to("#contact", {
       yPercent: 100,
-      ease: "none",
+      ease: "power2.in",
       scrollTrigger: {
         trigger: "#contact-content",
         start: "top bottom",
@@ -25,7 +25,8 @@ const Contact = () => {
     })
     .to("#lets-talk", {
       y: "500px",
-      ease: "none",
+      ease: "power2.in",
+      duration:2,
       scrollTrigger: {
         trigger: "#contact-content",
         start: "top bottom",
