@@ -8,7 +8,7 @@ const TitleReveal = () => {
 
   useLayoutEffect(() => {
     tl.to("#icons", {
-      xPercent: 30,
+      xPercent: 25,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: "#title-reveal",

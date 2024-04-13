@@ -45,7 +45,7 @@ const WorkSlider = () => {
           ref={sectionRef}
           className="h-screen w-[150vw] relative flex "
         >
-          <div className="h-screen w-fit lg:w-[150vw] flex gap-14 justify-end items-center pl-12 lg:pl-36 text-xl">
+          <div className="h-screen w-fit lg:w-[150vw] flex gap-14 justify-end items-center pl-12 lg:pl-36 text-xl 2xl:pl-16">
             <h3
               style={{
                 writingMode: "vertical-lr",
@@ -53,12 +53,12 @@ const WorkSlider = () => {
                /*  WebkitTextFillColor: "transparent",
                 WebkitTextStroke: "1px white", */
               }}
-              className="text-stone-200 font-semibold font-title2 text-6xl lg:text-9xl lg:mr-6"
+              className="text-stone-200 font-semibold font-title2 text-6xl lg:text-9xl 2xl:text-[10rem] l lg:mr-6"
             >
               WORKS
             </h3>
             {numbWorks.map((num, i) => (
-              <h3 key={i} className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md ">
+              <h3 key={i} className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md 2xl:w-56 2xl:h-96">
                 <span className="absolute z-10 -left-5 -bottom-5 lg:-left-7 lg:-bottom-7 text-5xl font-semibold text-stone-600 lg:text-7xl">
                   {num}
                 </span>
