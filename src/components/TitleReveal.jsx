@@ -1,10 +1,31 @@
+import React, { useRef, useLayoutEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const TitleReveal = () => {
+  const tl = gsap.timeline();
+
+  useLayoutEffect(() => {
+    tl.to("#icons", {
+      xPercent: 30,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: "#title-reveal",
+        start: "top bottom",
+        end: "top top",
+        scrub: true,
+      },
+    })
+   
+  }, []);
+
   return (
     <section
       id="title-reveal"
       className="relative w-full h-screen bg-zinc-900 flex flex-col items-start justify-end lg:justify-end lg:pb-4"
     >
-      <ul className="z-50 w-full absolute -top-6 flex flex-wrap justify-center items-center text-6xl gap-2 px-2 text-stone-600  md:text-7xl lg:text-8xl xl:gap-8 xl:top-10  ">
+      <ul id="icons" className="z-50 w-1/2 absolute -top-6 flex flex-wrap justify-center items-center text-6xl gap-2 px-2 text-stone-600  md:text-7xl lg:text-8xl xl:gap-8 xl:top-10  ">
         <li>
           <i className="bx bxl-javascript"></i>
         </li>
