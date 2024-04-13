@@ -20,7 +20,7 @@
   right: 0;
   left: 0;
   margin-right: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .item {
@@ -42,6 +42,7 @@
   color: #666;
   transition: 0.5s;
 }
+
 
 .item a::before {
   content: "";
@@ -67,11 +68,19 @@
   box-shadow: 0 0 5px #b91c1c;
   text-shadow: 0 0 5px #b91c1c;
 }
+@media(min-width:600px) {
+  .icons-wrapper{
+    margin-bottom: 3rem;
+  }
+  .item a {
+    width: 60px;
+    height: 60px;
+    font-size: 37px;
+  }
+}
 /* BTN-DATA CONTACT */
 .btn {
   width: 100%;
-  font-size: 16px;
-  font-weight: 700;
   border: 1px solid rgb(37, 37, 39);
   cursor: crosshair;
   position: relative;

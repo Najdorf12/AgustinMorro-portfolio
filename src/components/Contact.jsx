@@ -24,7 +24,7 @@ const Contact = () => {
       },
     })
     .to("#lets-talk", {
-      y: "300px",
+      y: "200px",
       ease: "power2.in",
       duration:2,
       scrollTrigger: {
@@ -33,7 +33,7 @@ const Contact = () => {
         end: "top top",
         scrub: true,
       },
-    });
+    }); 
   }, []);
 
 
@@ -56,16 +56,16 @@ const Contact = () => {
         id="contact-content"
         className="bg-zinc-900 z-50 w-full h-screen absolute flex flex-col items-center pt-16 lg:pt-16 2xl:pt-20"
       >
-        <h2 className="self-start mb-12 pl-3 text-stone-400 font-semibold font-title text-lg lg:text-2xl lg:leading-9 lg:pl-14 2xl:pl-24  2xl:text-3xl 2xl:leading-10 lg:mb-20 ">
+        <h2 className="self-start mb-12 pl-3 text-stone-400 font-semibold font-title text-lg lg:text-2xl lg:leading-9 lg:mb-20 lg:pl-14 2xl:pl-24  2xl:text-3xl 2xl:leading-10  ">
           Open to new opportunities and collaborations! <br /> Get in touch
         </h2>
         {contactBtns.map((btn,i) => (
           <div  key={i} className="btn">
             <p 
-          className="relative z-50 flex justify-between font-bold font-title2 pl-3 py-1 text-7xl text-stone-700  duration-700 w-full lg:pl-14 2xl:pl-24">
+          className="relative z-50 flex justify-between font-bold font-title2 pl-3 py-1 text-7xl text-stone-700  duration-700 w-full lg:py-2 lg:pl-14 2xl:pl-24 2xl:py-3 2xl:text-8xl">
               { btn.name } 
               
-              <p id="btn-data" className="font-semibold pb-2 font-title text-xl hover:text-red-700  absolute right-0 left-0 bottom-0 top-0 flex items-center justify-end opacity-0 hover:opacity-100 hover:-translate-x-20 lg:pr-36 2xl:pr-44 duration-700">
+              <p id="btn-data" className="font-semibold pb-2 font-title text-xl hover:text-red-700  absolute right-0 left-0 bottom-0 top-0 flex items-center justify-end opacity-0 hover:opacity-100 hover:-translate-x-20 lg:pr-36 2xl:pr-44 2xl:text-2xl duration-700">
                { btn.data }
               </p>
             </p>
