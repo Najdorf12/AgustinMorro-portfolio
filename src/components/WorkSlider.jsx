@@ -8,9 +8,8 @@ const WorkSlider = () => {
   const triggerRef = useRef(null);
 
   let dinamicWidth = 0;
-  const ammountToScroll = () =>  window.innerWidth > 820 ? dinamicWidth = "-90vw" : dinamicWidth = "-210vw";
+  const ammountToScroll = () =>  window.innerWidth > 820 ? dinamicWidth = "-70vw" : dinamicWidth = "-210vw";
       
-  
   const numbWorks = ["01", "02", "03", "04", "05"];
   useLayoutEffect(() => {
     ammountToScroll();
@@ -43,9 +42,9 @@ const WorkSlider = () => {
         <div
           id="works-wrapper"
           ref={sectionRef}
-          className="h-screen w-[150vw] relative flex "
+          className="h-screen w-[110vw] relative flex "
         >
-          <div className="h-screen w-fit lg:w-[150vw] flex gap-14 justify-end items-center pl-12 lg:pl-36 text-xl 2xl:pl-16">
+          <div className=" h-screen w-fit lg:w-[140vw] flex gap-14 justify-start pl-6 lg:pl-28 items-center text-xl">
             <h3
               style={{
                 writingMode: "vertical-lr",
@@ -53,7 +52,7 @@ const WorkSlider = () => {
                /*  WebkitTextFillColor: "transparent",
                 WebkitTextStroke: "1px white", */
               }}
-              className="text-stone-200 font-semibold font-title2 text-6xl lg:text-9xl 2xl:text-[10rem] l lg:mr-6"
+              className="text-stone-200 font-semibold font-title2 text-6xl lg:text-9xl 2xl:text-[10rem] lg:mr-6"
             >
               WORKS
             </h3>

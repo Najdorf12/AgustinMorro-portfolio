@@ -13,7 +13,7 @@ const Experience = () => {
          enablePan={false}
 				enableRotate={false}
 				enableZoom={false} />
-      <group position={[6, -2.5, 6]}>
+      <group position={[5, -2.5, 6]}>
         <Roman scale={1.1} />
         <Suspense />
       </group>

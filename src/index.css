@@ -55,18 +55,21 @@
   background: #b91c1c;
   transition: 0.5s;
   transform: scale(0.9);
-  z-index: -1;
+  z-index:-1;
 }
 
 .item a:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #b91c1c;
+
 }
 
 .item a:hover {
   color: #b91c1c;
   box-shadow: 0 0 5px #b91c1c;
   text-shadow: 0 0 5px #b91c1c;
+
+
 }
 @media(min-width:600px) {
   .icons-wrapper{
@@ -76,6 +79,16 @@
     width: 60px;
     height: 60px;
     font-size: 37px;
+  }
+}
+@media(min-width:1100px) {
+  .icons-wrapper{
+    margin-bottom: 5rem;
+  }
+  .item a {
+    width: 70px;
+    height: 70px;
+    font-size: 46px;
   }
 }
 /* BTN-DATA CONTACT */
@@ -116,167 +129,53 @@
 }
 
 /* BTN ABOUT */
-.ui-btn {
-  --btn-hover-bg: rgb(51, 51, 51);
-  --btn-transition: 1s;
-  --btn-animation-duration: 2.5s;
-
-  --hover-btn-color: #000000;
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-family: Menlo, Roboto Mono, monospace;
-  /* 👆 this field should not be empty */
-}
-
-/* button settings 👆 */
-
-.ui-btn {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  transition: var(--btn-transition);
-  overflow: hidden;
-  font-weight: 900;
-}
-
-.ui-btn span {
-  transition: var(--btn-transition);
+ #btn-about a {
   position: relative;
-  background: inherit;
-  z-index: 50;
-  letter-spacing: 0.2rem;
-  font-weight: 900;
+  display: inline-block;
+  padding: 10px 27px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.ui-btn span::before {
-  box-sizing: border-box;
+#btn-about a::before {
+  content: '';
   position: absolute;
-  content: "";
-  background: inherit;
-  font-weight: 900;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 5px);
+  height: calc(100% - 12px);
+  background-color: rgb(24 24 27);
+  transition: 0.3s ease-in-out;
+  transform: scaleY(1);
 }
 
-.ui-btn:hover span,
-.ui-btn:focus span {
-  font-weight: 900;
+#btn-about  a:hover::before {
+  transform: scaleY(0);
 }
 
-.ui-btn:hover span::before,
-.ui-btn:focus span::before {
-  animation: chitchat linear both var(--btn-animation-duration);
+#btn-about a::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color: rgb(24 24 27);
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
 }
 
-@keyframes chitchat {
-  0% {
-    content: "#";
-    color: #000000;
-  }
+#btn-about a:hover::after {
+  transform: scaleX(0);
+}
 
-  5% {
-    content: ".";
-  }
+#btn-about a span {
+  position: relative;
+  z-index: 3;
+}
 
-  10% {
-    content: "^{";
-    color: #000000;
-  }
-
-  15% {
-    content: "-!";
-    color: #b91c1c;
-  }
-
-  20% {
-    content: "#$_";
-    color: #b91c1c;
-  }
-
-  25% {
-    content: "№:0";
-    color: #000000;
-  }
-
-  30% {
-    content: "#{+.";}35%{content: "@}-?";
-    color: #000000;
-  }
-
-  40% {
-    content: "?{4@%";
-    color: #000000;
-  }
-
-  45% {
-    content: "=.,^!";
-    color: #b91c1c;
-  }
-
-  50% {
-    content: "?2@%";
-    color: #b91c1c;
-  }
-
-  55% {
-    content: "\;1}]";
-  }
-
-  60% {
-    content: "?{%:%";
-    right: 0;
-    color: #b91c1c;
-  }
-
-  65% {
-    content: "|{f[4";
-    right: 0;
-  }
-
-  70% {
-    content: "{4%0%";
-    right: 0;
-    color: #b91c1c;
-    color: #000000;
-
-  }
-
-  75% {
-    content: "'1_0<";
-    right: 0;
-    color: #000000;
-
-  }
-
-  80% {
-    content: "{0%";
-    right: 0;
-    color: #000000;
-  }
-
-  85% {
-    content: "]>'";
-    right: 0;
-    color:#b91c1c;
-  }
-
-  90% {
-    content: "4";
-    right: 0;
-    color: #000000;
-  }
-
-  95% {
-    content: "2";
-    right: 0;
-    color: #b91c1c;
-  }
-
-  100% {
-    content: "";
-    right: 0;
-    color: #000000;
-    font-weight: 900;
-  }
+#btn-about button {
+  border: none;
 }

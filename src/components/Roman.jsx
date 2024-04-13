@@ -58,9 +58,9 @@ export default function Model(props) {
       },
     })
       .to(scene.position, {
-        x: -18.3,
+        x: -17.3,
         y: -1.5,
-        z: -2,
+        z: -3,
         scrollTrigger: {
           trigger: "#about",
           start: "top bottom",
@@ -85,7 +85,7 @@ export default function Model(props) {
 
       /* THIRD SECTION */
       .to(camera.position, {
-        x: 67.5,
+        x: 68.5,
         y: 1.3,
         z:38,
         ease: "power1.in",
@@ -99,9 +99,9 @@ export default function Model(props) {
         },
       })
       .to(scene.position, {
-        x: -2.3,
-        y: -1.3,
-        z: 3,
+        x: -3.3,
+        y: -1.1,
+        z:1,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -128,9 +128,9 @@ export default function Model(props) {
       })
       /*WORKS SECTION */
       .to(camera.position, {
-        x: 75.5,
-        y: 1,
-        z:6,
+        x: 72.5,
+        y: -.7,
+        z:8,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -142,7 +142,7 @@ export default function Model(props) {
         },
       })
       .to(scene.position, {
-        x: 2.3,
+        x: 3,
         y: -1.3,
         z: -.7,
         ease: "power1.in",

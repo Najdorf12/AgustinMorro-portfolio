@@ -24,8 +24,8 @@ const Contact = () => {
       },
     })
     .to("#lets-talk", {
-      y: "200px",
-      ease: "power2.in",
+      y: "100px",
+      ease: "power1.in",
       duration:2,
       scrollTrigger: {
         trigger: "#contact-content",
