@@ -41,31 +41,31 @@ const Contact = () => {
    <>
       <section
         id="contact"
-        className="realative bg-gray-100 w-full h-screen flex flex-col justify-center items-center lg:items-start lg:pl-20  "
+        className="realative bg-gray-100 w-full h-screen flex flex-col justify-center items-center lg:items-start lg:pl-20 2xl:bg-red-600 "
       >
      <article  id="lets-talk" className="relative flex flex-col">
-          <h2 className="w-fit  text-6xl font-semibold font-title2 text-red-700 sm:text-8xl lg:text-9xl">
+          <h2 className="w-fit -mt-28 text-6xl font-semibold font-title2 text-red-700 sm:text-8xl sm:mr-36 lg:text-9xl 2xl:mr-40 2xl:text-[9rem]">
             Lets Talk
           </h2>
         
-          <i className='bx bx-link-external text-zinc-900 self-end lg:text-7xl lg:mt-1 rotate-90 '></i>
+          <i className='bx bx-link-external text-zinc-900 self-end text-4xl sm:mr-36 sm:text-5xl lg:text-7xl lg:mt-1 rotate-90 '></i>
         </article>  
       </section>
 
       <section
         id="contact-content"
-        className="bg-zinc-900 z-50 w-full h-screen absolute flex flex-col items-center lg:pt-16"
+        className="bg-zinc-900 z-50 w-full h-screen absolute flex flex-col items-center pt-16 lg:pt-16 2xl:pt-20"
       >
-        <h2 className=" lg:text-2xl lg:leading-9 self-start ml-10 mb-12 text-stone-400 font-semibold font-title">
+        <h2 className="self-start mb-12 pl-3 text-stone-400 font-semibold font-title text-lg lg:text-2xl lg:leading-9 lg:pl-14 2xl:pl-24  2xl:text-3xl 2xl:leading-10 lg:mb-20 ">
           Open to new opportunities and collaborations! <br /> Get in touch
         </h2>
         {contactBtns.map((btn,i) => (
           <div  key={i} className="btn">
             <p 
-          className="relative z-50 flex justify-between font-bold font-title2 py-3 text-7xl pl-10 text-stone-700  duration-700 w-full">
+          className="relative z-50 flex justify-between font-bold font-title2 pl-3 py-1 text-7xl text-stone-700  duration-700 w-full lg:pl-14 2xl:pl-24">
               { btn.name } 
               
-              <p id="btn-data" className="font-semibold pb-2 font-title text-xl hover:text-red-700  absolute right-0 left-0 bottom-0 top-0 flex items-center justify-end opacity-0 hover:opacity-100 hover:-translate-x-20 lg:pr-20 duration-700">
+              <p id="btn-data" className="font-semibold pb-2 font-title text-xl hover:text-red-700  absolute right-0 left-0 bottom-0 top-0 flex items-center justify-end opacity-0 hover:opacity-100 hover:-translate-x-20 lg:pr-36 2xl:pr-44 duration-700">
                { btn.data }
               </p>
             </p>

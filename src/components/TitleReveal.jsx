@@ -2,9 +2,9 @@ const TitleReveal = () => {
   return (
     <section
       id="title-reveal"
-      className="relative w-full h-screen bg-zinc-900 flex flex-col items-start justify-end pb-4 lg:justify-center"
+      className="relative w-full h-screen bg-zinc-900 flex flex-col items-start justify-end lg:justify-end lg:pb-4"
     >
-      {/* <ul className="z-50 w-full px-2 text-stone-600 text-6xl flex flex-wrap gap-2 justify-center items-center absolute -top-10 lg:text-8xl xl:gap-8  ">
+      <ul className="z-50 w-full absolute -top-6 flex flex-wrap justify-center items-center text-6xl gap-2 px-2 text-stone-600  md:text-7xl lg:text-8xl xl:gap-8 xl:top-10  ">
         <li>
           <i className="bx bxl-javascript"></i>
         </li>
@@ -29,8 +29,14 @@ const TitleReveal = () => {
         <li>
           <i class="bx bxl-mongodb"></i>
         </li>
-      </ul> */}
-      <p className="z-50  pl-4 font-bold font-title2 text-6xl text-red-700 xl:text-8xl xl:pl-20 xl:mt-4">
+        <li>
+          <i class="bx bxl-vuejs"></i>
+        </li>
+        <li>
+          <i class="bx bxl-git"></i>
+        </li>
+      </ul>
+      <p className="z-50  pl-4 font-bold font-title2 text-6xl text-red-700 xl:text-8xl xl:pl-20 2xl:text-9xl">
         TRY IT AGAIN. <br />
         <span className="text-stone-600">FAIL AGAIN.</span> <br />
         FAIL BETTER.

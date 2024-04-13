@@ -1,25 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* BTNS GITH & IN */
 .icons-wrapper {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: end;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1rem;
   position: absolute;
   bottom: 0;
   right: 0;
-  left:0;
+  left: 0;
   margin-right: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .item {
@@ -29,17 +30,17 @@
 
 .item a {
   position: relative;
-  display: block;
-  width: 60px;
-  height: 60px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
   text-align: center;
-  line-height: 63px;
   background: #333;
   border-radius: 50%;
   font-size: 30px;
   color: #666;
   transition: 0.5s;
-
 }
 
 .item a::before {
@@ -66,7 +67,7 @@
   box-shadow: 0 0 5px #b91c1c;
   text-shadow: 0 0 5px #b91c1c;
 }
-
+/* BTN-DATA CONTACT */
 .btn {
   width: 100%;
   font-size: 16px;
@@ -81,6 +82,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .btn::before {
@@ -100,22 +102,20 @@
   transform: translateX(0);
 }
 
-#contact{
+#contact {
   position: relative !important;
 }
 
-
 /* BTN ABOUT */
 .ui-btn {
-  --btn-default-bg: rgb(41, 41, 41);
   --btn-hover-bg: rgb(51, 51, 51);
   --btn-transition: 1s;
-  --btn-animation-duration:4s;
- 
-  --hover-btn-color: #fff ;
+  --btn-animation-duration: 2.5s;
+
+  --hover-btn-color: #000000;
   --font-size: 16px;
   /* 👆 this field should not be empty */
-  --font-family: Menlo,Roboto Mono,monospace;
+  --font-family: Menlo, Roboto Mono, monospace;
   /* 👆 this field should not be empty */
 }
 
@@ -126,21 +126,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--btn-default-bg);
   border: none;
   cursor: pointer;
   transition: var(--btn-transition);
   overflow: hidden;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .ui-btn span {
   transition: var(--btn-transition);
   position: relative;
   background: inherit;
-  z-index:50;
-  letter-spacing: .2rem;
-  font-weight: 800;
+  z-index: 50;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
 }
 
 .ui-btn span::before {
@@ -148,24 +147,23 @@
   position: absolute;
   content: "";
   background: inherit;
-  font-weight: 800;
+  font-weight: 900;
 }
 
-
-
-.ui-btn:hover span, .ui-btn:focus span {
-  color: var(--hover-btn-color);
-  font-weight: 800;
+.ui-btn:hover span,
+.ui-btn:focus span {
+  font-weight: 900;
 }
 
-.ui-btn:hover span::before, .ui-btn:focus span::before {
+.ui-btn:hover span::before,
+.ui-btn:focus span::before {
   animation: chitchat linear both var(--btn-animation-duration);
 }
 
 @keyframes chitchat {
   0% {
     content: "#";
-    color:#b91c1c;
+    color: #000000;
   }
 
   5% {
@@ -174,38 +172,42 @@
 
   10% {
     content: "^{";
+    color: #000000;
   }
 
   15% {
     content: "-!";
+    color: #b91c1c;
   }
 
   20% {
     content: "#$_";
+    color: #b91c1c;
   }
 
   25% {
     content: "№:0";
+    color: #000000;
   }
 
   30% {
-    content: "#{+.";
-  }
-
-  35% {
-    content: "@}-?";
+    content: "#{+.";}35%{content: "@}-?";
+    color: #000000;
   }
 
   40% {
     content: "?{4@%";
+    color: #000000;
   }
 
   45% {
     content: "=.,^!";
+    color: #b91c1c;
   }
 
   50% {
     content: "?2@%";
+    color: #b91c1c;
   }
 
   55% {
@@ -215,6 +217,7 @@
   60% {
     content: "?{%:%";
     right: 0;
+    color: #b91c1c;
   }
 
   65% {
@@ -225,38 +228,46 @@
   70% {
     content: "{4%0%";
     right: 0;
+    color: #b91c1c;
+    color: #000000;
+
   }
 
   75% {
     content: "'1_0<";
     right: 0;
+    color: #000000;
+
   }
 
   80% {
     content: "{0%";
     right: 0;
-    color:#b91c1c;
-
+    color: #000000;
   }
 
   85% {
     content: "]>'";
     right: 0;
+    color:#b91c1c;
   }
 
   90% {
     content: "4";
     right: 0;
+    color: #000000;
   }
 
   95% {
     content: "2";
     right: 0;
+    color: #b91c1c;
   }
 
   100% {
     content: "";
     right: 0;
-    color:#b91c1c;
+    color: #000000;
+    font-weight: 900;
   }
 }
