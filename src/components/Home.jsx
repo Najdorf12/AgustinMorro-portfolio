@@ -7,7 +7,7 @@ const Home = () => {
       className="relative first-letter:w-full h-screen bg-zinc-900  md:flex md:flex-col md:pt-0"
     >
       
-      <article className="flex px-2 flex-col h-full py-4 items-start justify-center  gap-2 w-full relative  lg:max-w-fit lg:h-[100%] lg:justify-center lg:pt-1 lg:ml-20 lg:-mt-10 2xl:-mt-20 ">
+      <article className="z-50 sm:z-10 flex px-2 flex-col h-full py-4 items-start justify-center  gap-2 w-full relative  lg:max-w-fit lg:h-[100%] lg:justify-center lg:pt-1 lg:ml-20 lg:-mt-10 2xl:-mt-20 ">
         <h1 className="z-10 font-test font-bold text-6xl tracking-wide text-stone-700 sm:text-8xl  lg:text-[9rem] 2xl:text-[10rem] ">
           <span className="text-red-700 lg:mr-2">A</span>GUSTIN
         </h1>

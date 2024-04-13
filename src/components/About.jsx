@@ -17,9 +17,9 @@ const About = () => {
           error voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Recusandae voluptates explicabo temporibus fuga amet
         </p>
-        <button className="ui-btn flex justify-center items-center gap-3 px-5 py-1 rounded-lg mt-6 lg:text-sm font-extrabold font-title lg:self-start text-gray-300 bg-stone-700 ">
+        <button className="ui-btn flex justify-center items-center gap-3 px-5 py-1 rounded-lg mt-6 lg:text-sm font-extrabold font-title self-start text-gray-300 bg-stone-700 ">
           <span className= "text-gray-200 font-black">CONTACT </span>
-          <i className="bx bx-link-external lg:text-3xl text-red-700 "></i>
+          <i className="bx bx-link-external text-2xl font-semibold lg:text-3xl text-red-700 "></i>
         </button>
         {/*     <button className="mt-6 text-2xl font-semibold font-title2 flex lg:gap-4 justify-center items-center self-start text-gray-300  lg:self-start lg:text-3xl">
           Contact{" "}

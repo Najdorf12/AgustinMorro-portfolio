@@ -43,8 +43,8 @@ const Contact = () => {
         id="contact"
         className="realative bg-gray-100 w-full h-screen flex flex-col justify-center items-center lg:items-start lg:pl-20 2xl:bg-red-600 "
       >
-     <article  id="lets-talk" className="relative flex flex-col">
-          <h2 className="w-fit -mt-28 text-6xl font-semibold font-title2 text-red-700 sm:text-8xl sm:mr-36 lg:text-9xl 2xl:mr-40 2xl:text-[9rem]">
+     <article  id="lets-talk" className="z-50 sm:z-10 relative flex flex-col">
+          <h2 className="w-fit -mt-28 text-7xl font-semibold font-title2 text-red-700 sm:text-8xl sm:mr-36 lg:text-9xl 2xl:mr-40 2xl:text-[9rem]">
             Lets Talk
           </h2>
         
@@ -56,7 +56,7 @@ const Contact = () => {
         id="contact-content"
         className="bg-zinc-900 z-50 w-full h-screen absolute flex flex-col items-center pt-16 lg:pt-16 2xl:pt-20"
       >
-        <h2 className="self-start mb-12 pl-3 text-stone-400 font-semibold font-title text-lg lg:text-2xl lg:leading-9 lg:mb-20 lg:pl-14 2xl:pl-24  2xl:text-3xl 2xl:leading-10  ">
+        <h2 className="self-start mb-12 pl-3 text-stone-400 font-semibold font-title text-lg lg:text-2xl lg:leading-9 lg:mb-16 2xl:mb-24 lg:pl-14 2xl:pl-24  2xl:text-3xl 2xl:leading-10  ">
           Open to new opportunities and collaborations! <br /> Get in touch
         </h2>
         {contactBtns.map((btn,i) => (
