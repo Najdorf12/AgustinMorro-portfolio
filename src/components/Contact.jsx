@@ -41,7 +41,7 @@ const Contact = () => {
    <>
       <section
         id="contact"
-        className="realative bg-gray-100 w-full h-screen flex flex-col justify-center items-center lg:items-start lg:pl-20 2xl:bg-red-600 "
+        className="realative bg-gray-100 w-full h-screen flex flex-col justify-center items-center lg:items-start lg:pl-20 "
       >
      <article  id="lets-talk" className="z-50 sm:z-10 relative flex flex-col">
           <h2 className="w-fit -mt-28 text-7xl font-semibold font-title2 text-red-700 sm:text-8xl sm:mr-36 lg:text-9xl 2xl:mr-40 2xl:text-[9rem]">

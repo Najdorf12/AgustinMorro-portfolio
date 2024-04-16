@@ -4,7 +4,7 @@ const About = () => {
       id="about"
       className="w-full flex flex-col justify-start items-center h-5/6 pb-12 bg-zinc-900 px-3 pt-1 sm:h-screen sm:pt-20 lg:pb-0 lg:justify-center lg:pt-0 "
     >
-      <article className="z-50 flex flex-col gap-2 max-w-[500px] sm:self-end sm:mr-10 lg:mr-0 lg:ml-[30rem] lg:self-center 2xl:max-w-[720px]">
+      <article className="z-50 flex flex-col gap-2 max-w-[500px] sm:self-end sm:mr-10 lg:mr-0 lg:ml-[38rem] lg:self-center 2xl:max-w-[720px]">
         <h3 className="font-title2 self-end font-bold text-4xl text-gray-200 sm:text-5xl  lg:text-7xl 2xl:text-9xl">
           ABOUT <span className=" text-red-700 ">ME</span>
         </h3>

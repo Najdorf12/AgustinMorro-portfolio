@@ -11,8 +11,8 @@ const Experience = () => {
       <ambientLight intensity={0.2} />
       <OrbitControls 
          enablePan={false}
-				enableRotate={false}
-				enableZoom={false} />
+				 enableRotate={false}
+				 enableZoom={false} />
       <group position={[5, -2.5, 6]}>
         <Roman scale={1.1} />
         <Suspense />
