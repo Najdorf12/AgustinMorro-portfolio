@@ -8,24 +8,31 @@ const WorkSlider = () => {
   const triggerRef = useRef(null);
 
   let dinamicWidth = 0;
-  const ammountToScroll = () =>  window.innerWidth > 820 ? dinamicWidth = "-70vw" : dinamicWidth = "-210vw";
-      
-  const numbWorks = ["01", "02", "03", "04", "05"];
+  const ammountToScroll = () => {
+    const worksCount = 6; // Número total de trabajos
+    const workWidth = window.innerWidth > 820 ? 320 : 240; // Ancho aproximado de cada trabajo en móvil y desktop
+    const gap = 14; // Espacio entre trabajos
+    const totalWidth = worksCount * (workWidth + gap);
+    return window.innerWidth > 820 ? `-${totalWidth}px` : `-${totalWidth}px`;
+  };
+
+  const numbWorks = ["01", "02", "03", "04", "05", "06"]; // Añade el sexto trabajo
+
   useLayoutEffect(() => {
-    ammountToScroll();
+    const width = ammountToScroll();
     const pin = gsap.fromTo(
       sectionRef.current,
       {
         translateX: 0,
       },
       {
-        translateX: dinamicWidth,
+        translateX: width,
         ease: "none",
         duration: 1,
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "1000 top",
+          end: "2000 top", // Aumenta la distancia de scroll
           scrub: 3,
           pin: true,
         },
@@ -37,28 +44,26 @@ const WorkSlider = () => {
   }, []);
 
   return (
-    <section id="works" className="overflow-hidden bg-zinc-900">
+    <section id="works" className="z-50 relative overflow-hidden">
       <div ref={triggerRef}>
         <div
           id="works-wrapper"
           ref={sectionRef}
-          className="h-screen w-[110vw] relative flex "
+          className="h-screen w-[120vw] relative flex "
         >
-          <div className=" h-screen w-fit lg:w-[140vw] flex gap-14 justify-start pl-6 lg:pl-28 items-center text-xl">
+          <div className="z-50 relative h-screen w-fit lg:w-[140vw] flex gap-14 justify-start pl-6 lg:pl-28 items-center text-xl">
             <h3
               style={{
                 writingMode: "vertical-lr",
                 transform: "rotate(180deg)",
-               /*  WebkitTextFillColor: "transparent",
-                WebkitTextStroke: "1px white", */
               }}
-              className="text-stone-200 font-semibold font-title2 text-6xl lg:text-[10rem] 2xl:text-[14rem] lg:mr-6"
+              className="text-stone-200 font-semibold font-title2 text-7xl lg:text-[10rem] 2xl:text-[14rem] lg:mr-6"
             >
-              WORKS
+              <span className="text-pink-700">W</span>ORKS
             </h3>
             {numbWorks.map((num, i) => (
-              <h3 key={i} className="relative w-44 h-72 lg:w-64 lg:h-96 bg-gray-200 rounded-md 2xl:w-80 2xl:h-[400px]">
-                <span className="absolute z-10 -left-5 -bottom-5 lg:-left-7 lg:-bottom-7 text-5xl font-semibold text-stone-300 lg:text-7xl">
+              <h3 key={i} id="box-glass" className="relative z-50 w-60 h-96 lg:w-64 lg:h-96 border border-stone-500 rounded-md 2xl:w-80 2xl:h-[400px]">
+                <span className="absolute z-10 -left-10 -bottom-7 lg:-left-7 lg:-bottom-7 text-7xl font-semibold text-stone-300 lg:text-7xl">
                   {num}
                 </span>
               </h3>

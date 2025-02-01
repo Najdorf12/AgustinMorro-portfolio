@@ -20,35 +20,15 @@ export default function Model(props) {
   const { nodes, materials, animations } = useGLTF("/roman3d.gltf");
   const { actions } = useAnimations(animations, roman);
   const { scene, camera } = useThree();
+  const screen = window.screen.width;
   const tl = gsap.timeline();
-  /* // ----- used for getting the position for the roman ----
-	 const { cameraPosition, scenePosition, sceneRotation } = useControls({
-	 	cameraPosition: {
-	 		value: {
-	 			x: 5,
-	 			y: 4,
-	 			z: 2.8,
-	 		},
-	 		step: 0.05,
-	 	},
-	 	scenePosition: {
-	 		value: { x: 3.01, y: 0.76, z: 3.7 },
-	 		step: 0.05,
-	 	},
-
-	 	sceneRotation: {
-	 		value: { x: -0.53, y: -3.48, z: -0.21 },
-	 		step: 0.01,
-	 	},
-	 }); */
 
   useLayoutEffect(() => {
     new ScrollTrigger({});
-    // ABOUT SECTION
     tl.to(camera.position, {
-      x: 45.85,
-      y: 0,
-      z: 45.0,
+      x: screen > 700 ? 45.85 : 45.85,
+      y: screen > 700 ? 0 : 0,
+      z: screen > 700 ? 45 : 43,
       scrollTrigger: {
         trigger: "#about",
         start: "top bottom",
@@ -58,9 +38,9 @@ export default function Model(props) {
       },
     })
       .to(scene.position, {
-        x: -17.3,
-        y: -1.5,
-        z: -3,
+        x: screen > 700 ? -17.3 : -16.3,
+        y: screen > 700 ? -1.5 : -1.5,
+        z: screen > 700 ? -3 : -3,
         scrollTrigger: {
           trigger: "#about",
           start: "top bottom",
@@ -69,11 +49,10 @@ export default function Model(props) {
           immediateRender: false,
         },
       })
-
       .to(scene.rotation, {
-        x: 0.03,
-        y: 1.6,
-        z: 0.01,
+        x: screen > 700 ? 0.03 : 0.03,
+        y: screen > 700 ? 1.6 : 1.6,
+        z: screen > 700 ? 0.01 : 0.01,
         scrollTrigger: {
           trigger: "#about",
           start: "top bottom",
@@ -82,12 +61,10 @@ export default function Model(props) {
           immediateRender: false,
         },
       })
-
-      /* THIRD SECTION */
       .to(camera.position, {
-        x: 68.5,
-        y: 1.3,
-        z:38,
+        x: screen > 700 ? 68.5 : 77,
+        y: screen > 700 ? 1.3 : 1.4,
+        z: screen > 700 ? 38 : 55,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -99,9 +76,9 @@ export default function Model(props) {
         },
       })
       .to(scene.position, {
-        x: -3.3,
-        y: -1.1,
-        z:1,
+        x: screen > 700 ? -3.3 : -5,
+        y: screen > 700 ? -1.1 : -1.2,
+        z: screen > 700 ? 1 : .8,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -113,9 +90,9 @@ export default function Model(props) {
         },
       })
       .to(scene.rotation, {
-        x: 0.0,
-        y: 1,
-        z: 0.0,
+        x: 0,
+        y: screen > 700 ? 1 : .9,
+        z: 0,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -126,11 +103,38 @@ export default function Model(props) {
           immediateRender: false,
         },
       })
-      /*WORKS SECTION */
       .to(camera.position, {
-        x: 72.5,
-        y: -.7,
-        z:8,
+        x: screen > 700 ? 72.5 : 80,
+        y: screen > 700 ? -0.7 : -0.1,
+        z: screen > 700 ? 8 : 1,
+        ease: "power1.in",
+        duration: 5,
+        scrollTrigger: {
+          trigger: "#works",
+          start: "100px bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+          markers:true,
+        },
+      })
+      .to(scene.position, {
+        x: screen > 700 ? 3 : -9,
+        y: screen > 700 ? -1.3 : -2,
+        z: screen > 700 ? -0.7 : -0.3,
+        ease: "power1.in",
+        duration: 5,
+        scrollTrigger: {
+          trigger: "#works",
+          start: "100px bottom",
+          end: "top top",
+          scrub: true,
+          immediateRender: false,
+        },
+      }).to(scene.rotacion, {
+        x: 0,
+        y: screen > 700 ? 1 : .8,
+        z: 0,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -141,25 +145,10 @@ export default function Model(props) {
           immediateRender: false,
         },
       })
-      .to(scene.position, {
-        x: 3,
-        y: -1.3,
-        z: -.7,
-        ease: "power1.in",
-        duration: 5,
-        scrollTrigger: {
-          trigger: "#works",
-          start: "100px bottom",
-          end: "top top",
-          scrub: true,
-          immediateRender: false,
-        },
-      })
-      /*CONTACT SECTION */
       .to(camera.position, {
-        x: 74.5,
-        y: .8,
-        z:20,
+        x: screen > 700 ? 74.5 : 70,
+        y: screen > 700 ? 0.8 : 1,
+        z: screen > 700 ? 20 : 22,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -171,9 +160,9 @@ export default function Model(props) {
         },
       })
       .to(scene.position, {
-        x: -20,
-        y: -1.3,
-        z: -.5,
+        x: screen > 700 ? -20 : -18,
+        y: screen > 700 ? -1.3 : -2,
+        z: screen > 700 ? -0.5 : -2,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -185,9 +174,9 @@ export default function Model(props) {
         },
       })
       .to(scene.rotation, {
-        x: 0.0,
-        y: 1.5,
-        z: 0.0,
+        x: 0,
+        y: screen > 700 ? 1.5 : 1.2,
+        z: 0,
         ease: "power1.in",
         duration: 5,
         scrollTrigger: {
@@ -197,22 +186,9 @@ export default function Model(props) {
           scrub: true,
           immediateRender: false,
         },
-      })
+      });
   }, []);
 
-  // ---- used for debug ----
-  /* 	 useFrame(() => {
-	 	camera.position.x = cameraPosition.x;
-	 	camera.position.y = cameraPosition.y;
-	 	camera.position.z = cameraPosition.z;
-	 	scene.position.x = scenePosition.x;
-	 	scene.position.y = scenePosition.y;
-	 	scene.position.z = scenePosition.z;
-	 	scene.rotation.x = sceneRotation.x;
-	 	scene.rotation.y = sceneRotation.y;
-	 	scene.rotation.z = sceneRotation.z;
-	 });
- */
   return (
     <group ref={roman} {...props} dispose={null}>
       <group name="Sketchfab_Scene">

@@ -8,24 +8,30 @@ import Experience from "./components/Experience";
 import { Canvas } from "@react-three/fiber";
 
 const App = () => {
+  const screen = window.screen.width;
   const lenis = useLenis(({ scroll }) => {
     // called every scroll
   });
   return (
     <ReactLenis root>
-      <div className="h-screen overflow-x-hidden w-screen fixed top-0 right-0 left-0 z-40 lg:block">
-        <Canvas shadows camera={{ position: [35, 9, 80], fov: 4 }}>
-          <Experience />
-        </Canvas>
-      </div>
-      
-      <main className="w-full overflow-hidden bg-zinc-900">
+      <main className="relative w-full min-h-screen overflow-hidden bg-zinc-900">
+        <div className="w-full h-screen fixed z-30 overflow-hidden lg:block">
+          <Canvas
+            shadows
+            camera={{
+              position: screen > 700 ? [35, 9, 80] : [50, 15, 80],
+              fov: 4,
+            }}
+          >
+            <Experience />
+          </Canvas>
+        </div>
+
         <Home />
         <About />
         <TitleReveal />
         <WorkSlider></WorkSlider>
         <Contact />
-        
       </main>
     </ReactLenis>
   );

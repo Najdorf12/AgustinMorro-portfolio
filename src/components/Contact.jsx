@@ -41,20 +41,20 @@ const Contact = () => {
    <>
       <section
         id="contact"
-        className="realative bg-gray-100 w-full h-screen flex flex-col justify-center items-center lg:items-start lg:pl-20 "
+        className="realative bg-gray-100 w-full h-screen flex flex-col justify-start pt-20 items-start lg:items-start lg:pl-20 "
       >
-     <article  id="lets-talk" className="z-50 sm:z-10 relative flex flex-col">
-          <h2 className="w-fit -mt-28 text-7xl font-semibold font-title2 text-red-700 sm:text-8xl sm:mr-36 lg:text-9xl 2xl:mr-40 2xl:text-[9rem]">
+     <article  id="lets-talk" className="z-50 relative flex flex-col">
+          <h2 className="w-fit text-7xl font-semibold font-title2 text-red-700  lg:text-9xl 2xl:mr-40 2xl:text-[9rem]">
             Lets Talk
           </h2>
         
-          <i className='bx bx-link-external text-zinc-900 self-end text-4xl sm:mr-36 sm:text-5xl lg:text-7xl lg:mt-1 rotate-90 '></i>
+          <i className='bx bx-link-external text-zinc-900 self-end text-5xl sm:mr-36 sm:text-5xl lg:text-7xl lg:mt-1 rotate-90 '></i>
         </article>  
       </section>
 
       <section
         id="contact-content"
-        className="bg-zinc-900 z-50 w-full h-screen absolute flex flex-col items-center pt-16 lg:pt-16 2xl:pt-20"
+        className="bg-zinc-900 z-50 w-full h-screen  flex flex-col items-center pt-16 lg:pt-16 2xl:pt-20"
       >
         <h2 className="self-start mb-12 pl-3 text-stone-400 font-semibold font-title text-lg lg:text-2xl lg:leading-9 lg:mb-16 2xl:mb-24 lg:pl-14 2xl:pl-24  2xl:text-3xl 2xl:leading-10  ">
           Open to new opportunities and collaborations! <br /> Get in touch
